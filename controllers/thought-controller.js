@@ -44,7 +44,7 @@ const thoughtController = {
             Thought.findByIdAndDelete({ userId: params.id})
                 .then(dbThoughtData => {
                     if (!dbThoughtData) {
-                        res.status(404).json({message: 'No Thought was found with this id!'});
+                        res.status(404).json({message: 'Thought was deleted!'});
                         return;
                     }
                     res.json(!dbThoughtData);
@@ -75,7 +75,7 @@ const thoughtController = {
         )
         .then((dbThoughtData) => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No reaction found with this id'});
+                res.status(404).json({ message: 'REaction deleted!'});
                 return;
             }
             res.json(dbThoughtData);
