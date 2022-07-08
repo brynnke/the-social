@@ -73,7 +73,7 @@ const thoughtController = {
             {$pull: { friends: params.ReactionId}},
             { new: true }
         )
-        .then((dbThoughtrData) => {
+        .then((dbThoughtData) => {
             if (!dbThoughtData) {
                 res.status(404).json({ message: 'No reaction found with this id'});
                 return;
