@@ -8,7 +8,9 @@ This application is used for creating an API for a social media network. The poi
 Clone this app, from the terminal (command line), run "npm i" to install necessary dependencies. Next run command "npm start" from terminal. 
 
 ### Usage
+Not intended for use however if you do go through the following.
 Command: npm start (to use on local server port 3001 after cloning, don't for get nesscary dependencies.)
+
 
 ## Built using
 Javascript
@@ -19,3 +21,7 @@ Express
 Moment
 
 ## link to video/ DEMO
+
+
+## questions
+Contact thought github (brynnke)
