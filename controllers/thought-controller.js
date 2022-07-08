@@ -55,7 +55,7 @@ const thoughtController = {
     createReaction({ params}, res) {
         Reaction.findOneAndUpdate(
             {_id: params.userId},
-            {$push: { friends: params.reactionId}},
+            {$push: { reactions: params.reactionId}},
             { new: true }
         )
             .then((dbThoughtData) => {
@@ -70,7 +70,7 @@ const thoughtController = {
     deleteReaction({ params}, res) {
         Reaction.findOneAndUpdate(
             {_id: params.userId},
-            {$pull: { friends: params.ReactionId}},
+            {$pull: { reactions: params.ReactionId}},
             { new: true }
         )
         .then((dbThoughtData) => {
